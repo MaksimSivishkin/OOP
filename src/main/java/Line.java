@@ -1,5 +1,3 @@
-
-
 public class Line {
     private Point x;
     private Point y;
@@ -38,7 +36,7 @@ public class Line {
     }
 
     public String toString(){
-        String res=String.format("Линия от %s до %s", x, y);
+        String res=String.format("%s, %s", x, y);
         return res;
     }
 }
