@@ -10,14 +10,17 @@ public class Start {
         Line line2 = new Line(point2, point3);
 
         PolyLine polyLine = new PolyLine();
-        polyLine.AddPolyLine(line);
-        polyLine.AddPolyLine(line1);
-        polyLine.AddPolyLine(line2);
+        polyLine.addPolyLine(line);
+        polyLine.addPolyLine(line1);
+        polyLine.addPolyLine(line2);
+        double x=polyLine.sumPolyLine();
+        double y= line.getLine()+ line1.getLine()+ line2.getLine();
 
         System.out.println(polyLine.sumPolyLine());
         System.out.println(polyLine);
         System.out.println(polyLine.listPolyLine());
         point1.setX(12);
         System.out.println(polyLine);
+        System.out.println(x==y);
     }
 }
